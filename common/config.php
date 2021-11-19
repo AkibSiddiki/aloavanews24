@@ -9,8 +9,8 @@ $sEmail="editor@aloavanews24.com";
 $sAppId="";
 
 //Local
-$sSiteURL="http://localhost/Aloava/";
-$sCurrURL="http://localhost/Aloava".$_SERVER["REQUEST_URI"];
+$sSiteURL="https://akibsiddiki.github.io/aloavanews24/";
+$sCurrURL="https://akibsiddiki.github.io/aloavanews24".$_SERVER["REQUEST_URI"];
 
 
 
