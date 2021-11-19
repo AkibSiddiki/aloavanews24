@@ -1,0 +1,10 @@
+{
+    "version": 3,
+    "mappings": "AAAA,IAAI,CAAJ,WAAI,CCAJ,IAAI,CAAJ,WAAI",
+    "sources": [
+        "mixin.scss",
+        "variable.scss"
+    ],
+    "names": [],
+    "file": "mixin.min.css"
+}

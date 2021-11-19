@@ -1,0 +1,1 @@
+<!doctype html><html lang="en"><head><meta charset="UTF-8"><title>Business Insider</title><meta http-equiv="refresh" content="0;https://www.businessinsiderbd.com/"><script language="javascript">window.location="https://www.businessinsiderbd.com/";</script></head><body></body></html>

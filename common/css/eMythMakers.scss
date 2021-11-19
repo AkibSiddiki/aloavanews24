@@ -1,0 +1,468 @@
+@use "sass:math";
+@import "./mixin.scss";
+@import "./variable.scss";
+@import url("https://fonts.googleapis.com/css2?family=Noto+Serif+Bengali:wght@100;200;300;400;500;600;700;800;900&display=swap");
+/* >>>>>Common-start<<<< */
+body {
+  font-family: "Noto Serif Bengali", serif;
+  background-color: $color-text-3;
+  font-size: 16px;
+  overflow-x: hidden;
+  letter-spacing: -0.2px;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Noto Serif Bengali", serif;
+  margin-bottom: 0;
+  letter-spacing: -0.2px;
+}
+a {
+  color: $color-text-1;
+  text-decoration: none;
+  :hover {
+    color: $color-c !important ;
+  }
+}
+p {
+  margin-top: 0.05rem;
+  margin-bottom: 0.05rem;
+}
+main {
+  min-height: 650px;
+}
+.img100 {
+  width: 100%;
+}
+.container {
+  max-width: 1260px !important;
+  padding-right: 20px;
+  padding-left: 20px;
+}
+.multiColorBorder1 {
+  background: linear-gradient(
+    to right,
+    #e3e3e385 0%,
+    $color-a 33%,
+    $color-a 33%,
+    $color-a 66%,
+    $color-a 66%,
+    #e3e3e385 100%
+  );
+  height: 2px;
+  width: 100%;
+  position: absolute;
+  top: 0;
+}
+.multiColorBorder2 {
+  background: linear-gradient(
+    to right,
+    #e3e3e385 0%,
+    $color-a 33%,
+    $color-a 33%,
+    $color-a 66%,
+    $color-a 66%,
+    #e3e3e385 100%
+  );
+  height: 2px;
+  width: 100%;
+  position: absolute;
+  bottom: 0;
+}
+.borderRight {
+  border-right: 1px rgba($color-a, 0.5) solid;
+}
+.borderBottom {
+  border-bottom: 1px rgba($color-a, 0.5) solid;
+}
+.adimg1 {
+  width: 1110px;
+  height: 174px;
+  object-fit: contain;
+}
+/* >>>>>Common-end<<<< */
+.headerSection {
+  .headerBerBg {
+    background: #e8e8e8;
+    border-top: 3px $color-a solid;
+    .headerTopBer {
+      padding-bottom: 3px;
+      padding-top: 6px;
+      .date {
+        font-size: 16px;
+        line-height: 24px;
+        font-weight: 400;
+        color: $color-text-1;
+      }
+      .socialOther {
+        display: flex;
+        .engVersion {
+          color: $color-b;
+          font-size: 16px;
+          line-height: 23px;
+          margin-left: 10px;
+          text-decoration-style: solid;
+        }
+        .fab.fa-facebook-square {
+          color: $color-b;
+          font-size: 24px;
+          line-height: 26px;
+          margin-left: 10px;
+        }
+        .fab.fa-twitter-square {
+          color: $color-b;
+          font-size: 24px;
+          line-height: 26px;
+          margin-left: 10px;
+        }
+        .fab.fa-youtube-square {
+          color: $color-b;
+          font-size: 24px;
+          line-height: 26px;
+          margin-left: 10px;
+        }
+        .fab.fa-instagram {
+          color: $color-b;
+          font-size: 24px;
+          line-height: 26px;
+          margin-left: 10px;
+        }
+      }
+    }
+  }
+  .headerLogoDiv {
+    .menuIcon {
+      .fas.fa-bars {
+        font-size: 30px;
+        font-weight: 400;
+        line-height: 39px;
+      }
+    }
+    .logo {
+      width: 300px !important;
+    }
+    .searchIcon {
+      .fas.fa-search {
+        font-size: 30px;
+        font-weight: 400;
+        line-height: 39px;
+      }
+      .btn {
+        padding: 0;
+      }
+      .dropstart .dropdown-toggle::before {
+        content: none;
+      }
+      .btn-check:focus + .btn,
+      .btn:focus {
+        box-shadow: none;
+      }
+      .dropdown-menu {
+        width: 240px;
+        .form-control {
+          border: 2px solid rgba($color-a, 0.5);
+          &:focus {
+            box-shadow: 0 0 0 0.1rem rgba($color-a, 0.35);
+          }
+        }
+      }
+    }
+  }
+  .navbar {
+    padding-top: 0 !important;
+    padding-bottom: 0 !important;
+  }
+  .bg-light {
+    background-color: #fff !important;
+  }
+  .navbar-light .navbar-nav .nav-link {
+    color: $color-text-1;
+    font-size: 19px;
+    line-height: 27px;
+    font-weight: 400;
+  }
+  .navbar .nav-item {
+    transition: all 0.2s ease-in;
+  }
+  .dropdown-menu {
+    font-size: 17px;
+    line-height: 26px;
+    background-color: $color-a;
+    border: 0;
+    border-radius: 0;
+    transition: all 0.2s ease-in;
+    .dropdown-item {
+      color: $color-text-3;
+    }
+  }
+  .navbar .nav-item:hover {
+    background-color: $color-a;
+    .dropdown-menu {
+      display: block;
+    }
+    .nav-link {
+      color: $color-text-3 !important;
+    }
+  }
+  .dropdown-item:focus,
+  .dropdown-item:hover {
+    background-color: #ffdaaf;
+    color: $color-text-1;
+  }
+}
+
+.LeadSection {
+  margin-top: 24px;
+  .leadNewsA {
+    .catTag {
+      @include categoryTag;
+    }
+    .postTime {
+      @include postTimeTag;
+    }
+    .LeadHeading {
+      @include leadHeading;
+    }
+    .imgResize {
+      @include imgViewer(56%);
+    }
+    .details {
+      height: 87px;
+      overflow: hidden;
+      .brief {
+        @include briefLead;
+        @include maxLine(4);
+      }
+    }
+  }
+  .leadNewsB {
+    .catTag {
+      @include categoryTag;
+    }
+    .postTime {
+      @include postTimeTag;
+    }
+    .heading {
+      @include headingTypeA;
+      height: 76px;
+      overflow: hidden;
+    }
+    .details {
+      height: 112px;
+      overflow: hidden;
+      .brief {
+        @include brief;
+        @include maxLine(5);
+      }
+      .imgResize {
+        @include imgViewer(60%);
+      }
+    }
+  }
+  .latestNews {
+    .nav-pills .nav-link.active,
+    .nav-pills .show > .nav-link {
+      color: $color-text-3;
+      background-color: $color-b;
+      font-size: 18px;
+      line-height: 26px;
+      font-weight: 400;
+    }
+    .nav-link {
+      color: $color-text-1;
+      font-size: 18px;
+      line-height: 26px;
+      font-weight: 400;
+    }
+    .coloredBorderBottom {
+      @include coloredBorderBottom;
+    }
+    .details {
+      height: 89px;
+      overflow: hidden;
+      .heading {
+        @include headingTypeD;
+        @include maxLine(3);
+      }
+      .imgResize {
+        @include imgViewer(91%);
+      }
+    }
+  }
+  .leadNewsSM {
+    .details {
+      height: 132px;
+      overflow: hidden;
+      .catTag {
+        @include categoryTag;
+      }
+      .postTime {
+        @include postTimeTag;
+      }
+      .heading {
+        @include headingTypeB;
+        @include maxLine(3);
+      }
+      .imgResize {
+        @include imgViewer(75%);
+      }
+    }
+  }
+  .ad300 {
+    .catTitle {
+      text-align: center;
+      @include categoryTitle;
+    }
+    .coloredBorderBottom {
+      @include coloredBorderBottom;
+    }
+  }
+}
+.topNews {
+  .container {
+    .catTitle {
+      @include categoryTitle;
+      border-top: 1px rgba($color-a, 0.5) solid;
+      border-bottom: 3px $color-b solid;
+      padding-top: 8px;
+      padding-bottom: 8px;
+      padding-left: 16px;
+      .fas.fa-caret-right {
+        color: $color-b;
+      }
+    }
+    .row {
+      .catTag {
+        @include categoryTag;
+      }
+      .postTime {
+        @include postTimeTag;
+      }
+      .Heading {
+        @include headingTypeC;
+        @include maxLine(3);
+        height: 90px;
+      }
+      .imgResize {
+        @include imgViewer(56%);
+        margin-bottom: 4px;
+      }
+    }
+  }
+}
+.categoryNewsSection1 {
+  .newsLayout1 {
+    .catTitle {
+      @include categoryTitle;
+      border-top: 1px rgba($color-a, 0.5) solid;
+      border-bottom: 3px $color-b solid;
+      padding-top: 8px;
+      padding-bottom: 8px;
+      padding-left: 16px;
+      .fas.fa-caret-right {
+        color: $color-b;
+      }
+    }
+    .newsType1 {
+      .postTime {
+        @include postTimeTag;
+      }
+      .heading {
+        @include headingTypeC;
+        @include maxLine(2);
+        height: 76px;
+      }
+      .imgResize {
+        @include imgViewer(56%);
+      }
+    }
+    .newsType2 {
+      height: 86px;
+      overflow: hidden;
+      .heading {
+        @include headingTypeB;
+        @include maxLine(3);
+      }
+      .imgResize {
+        @include imgViewer(57%);
+      }
+    }
+  }
+  .newsLayout2 {
+    .catTitle {
+      @include categoryTitle;
+      border-top: 1px rgba($color-a, 0.5) solid;
+      border-bottom: 3px $color-b solid;
+      padding-top: 8px;
+      padding-bottom: 8px;
+      padding-left: 16px;
+      .fas.fa-caret-right {
+        color: $color-b;
+      }
+    }
+    .newsType1 {
+      .postTime {
+        @include postTimeTag;
+      }
+      .heading {
+        @include headingTypeC;
+        @include maxLine(2);
+        height: 76px;
+      }
+      .imgResize {
+        @include imgViewer(56%);
+      }
+    }
+    .newsType2 {
+      height: 104px;
+      overflow: hidden;
+      .heading {
+        @include headingTypeC;
+        @include maxLine(3);
+      }
+      .imgResize {
+        @include imgViewer(59%);
+      }
+    }
+  }
+  .newsLayout3 {
+    .catTitle {
+      @include categoryTitle;
+      border-top: 1px rgba($color-a, 0.5) solid;
+      border-bottom: 3px $color-b solid;
+      padding-top: 8px;
+      padding-bottom: 8px;
+      padding-left: 16px;
+      .fas.fa-caret-right {
+        color: $color-b;
+      }
+    }
+    .newsType1 {
+      .postTime {
+        @include postTimeTag;
+      }
+      .heading {
+        @include headingTypeC;
+        @include maxLine(2);
+        height: 76px;
+      }
+      .imgResize {
+        @include imgViewer(56%);
+      }
+    }
+    .newsType2 {
+      height: 83px;
+      overflow: hidden;
+      .heading {
+        @include headingTypeD;
+        @include maxLine(3);
+      }
+      .imgResize {
+        @include imgViewer(78%);
+      }
+    }
+  }
+}
