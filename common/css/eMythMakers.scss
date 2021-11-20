@@ -83,6 +83,15 @@ main {
   height: 174px;
   object-fit: contain;
 }
+.headerSticky {
+  z-index: 999;
+}
+.headerSticky.fixed {
+  width: 100%;
+  position: fixed;
+  top: 0;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.35);
+}
 /* >>>>>Common-end<<<< */
 .headerSection {
   .headerBerBg {
@@ -99,34 +108,38 @@ main {
       }
       .socialOther {
         display: flex;
+        place-items: center;
         .engVersion {
-          color: $color-b;
-          font-size: 16px;
+          font-size: 15px;
           line-height: 23px;
-          margin-left: 10px;
-          text-decoration-style: solid;
+          color: $color-text-3;
+        }
+        .btn {
+          padding: 0 4px;
+          margin-bottom: 4px;
+          background: $color-b;
         }
         .fab.fa-facebook-square {
           color: $color-b;
-          font-size: 24px;
+          font-size: 27px;
           line-height: 26px;
           margin-left: 10px;
         }
         .fab.fa-twitter-square {
           color: $color-b;
-          font-size: 24px;
+          font-size: 27px;
           line-height: 26px;
           margin-left: 10px;
         }
         .fab.fa-youtube-square {
           color: $color-b;
-          font-size: 24px;
+          font-size: 27px;
           line-height: 26px;
           margin-left: 10px;
         }
         .fab.fa-instagram {
           color: $color-b;
-          font-size: 24px;
+          font-size: 27px;
           line-height: 26px;
           margin-left: 10px;
         }
@@ -134,11 +147,33 @@ main {
     }
   }
   .headerLogoDiv {
+    .offcanvas.show {
+      transform: none;
+      width: 240px;
+      .offcanvas-header .btn-close {
+        font-size: 24px;
+      }
+      .offcanvas-body {
+       ul{
+         list-style: none;
+         li{
+           @include headingTypeB;
+           margin-bottom: 10px;
+         }
+       }
+      }
+    }
     .menuIcon {
       .fas.fa-bars {
         font-size: 30px;
         font-weight: 400;
         line-height: 39px;
+      }
+      .btn{
+        padding: 0;
+      }
+      .btn-check:focus + .btn, .btn:focus {
+        box-shadow: none;
       }
     }
     .logo {
@@ -159,13 +194,14 @@ main {
       .btn-check:focus + .btn,
       .btn:focus {
         box-shadow: none;
+        color: $color-a;
       }
       .dropdown-menu {
         width: 240px;
         .form-control {
           border: 2px solid rgba($color-a, 0.5);
           &:focus {
-            box-shadow: 0 0 0 0.1rem rgba($color-a, 0.35);
+            box-shadow: 0 0 0 0.1rem rgba($color-a, 1);
           }
         }
       }
@@ -225,6 +261,7 @@ main {
     }
     .LeadHeading {
       @include leadHeading;
+      @include maxLine(2);
     }
     .imgResize {
       @include imgViewer(56%);
@@ -247,8 +284,7 @@ main {
     }
     .heading {
       @include headingTypeA;
-      height: 76px;
-      overflow: hidden;
+      @include maxLine(2);
     }
     .details {
       height: 112px;
@@ -289,25 +325,6 @@ main {
       }
       .imgResize {
         @include imgViewer(91%);
-      }
-    }
-  }
-  .leadNewsSM {
-    .details {
-      height: 132px;
-      overflow: hidden;
-      .catTag {
-        @include categoryTag;
-      }
-      .postTime {
-        @include postTimeTag;
-      }
-      .heading {
-        @include headingTypeB;
-        @include maxLine(3);
-      }
-      .imgResize {
-        @include imgViewer(75%);
       }
     }
   }
@@ -373,7 +390,7 @@ main {
       .heading {
         @include headingTypeC;
         @include maxLine(2);
-        height: 76px;
+        height: 60px;
       }
       .imgResize {
         @include imgViewer(56%);
@@ -410,7 +427,7 @@ main {
       .heading {
         @include headingTypeC;
         @include maxLine(2);
-        height: 76px;
+        height: 60px;
       }
       .imgResize {
         @include imgViewer(56%);

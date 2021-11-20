@@ -77,30 +77,35 @@
   line-height: (36px * 1.36);
   font-weight: 500;
   color: $color-text-1;
+  margin-bottom: 8px;
 }
 @mixin headingTypeA {
   font-size: 28px;
   line-height: (28px * 1.36);
   font-weight: 500;
   color: $color-text-1;
+  margin-bottom: 8px;
 }
 @mixin headingTypeB {
   font-size: 20px;
   line-height: (20px * 1.36);
   font-weight: 500;
   color: $color-text-1;
+  margin-bottom: 8px;
 }
 @mixin headingTypeC {
   font-size: 22px;
   line-height: (22px * 1.36);
   font-weight: 500;
   color: $color-text-1;
+  margin-bottom: 8px;
 }
 @mixin headingTypeD {
   font-size: 18px;
   line-height: (18px * 1.36);
   font-weight: 500;
   color: $color-text-1;
+  margin-bottom: 8px;
 }
 @mixin categoryTitle {
   font-size: 23px;

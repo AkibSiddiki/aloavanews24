@@ -9,8 +9,8 @@ $sEmail="editor@aloavanews24.com";
 $sAppId="";
 
 //Local
-$sSiteURL="https://akibsiddiki.github.io/aloavanews24/";
-$sCurrURL="https://akibsiddiki.github.io/aloavanews24".$_SERVER["REQUEST_URI"];
+$sSiteURL="http://localhost/Aloava/";
+$sCurrURL="http://localhost/Aloava".$_SERVER["REQUEST_URI"];
 
 
 
@@ -54,7 +54,7 @@ $sAddSense='<script data-ad-client="ca-pub-2041389748633910" async src="https://
 $sLogoURL=$sSiteURL."media/common/logo.png";
 $sLogoURLFooter=$sSiteURL."media/common/FLogo.png";
 $sLogoURLfb=$sSiteURL."media/common/logo-fb.png";
-$sFavicon=$sSiteURL."media/common/favicon.ico";
+$sFavicon=$sSiteURL."media/common/favicon.png";
 $sThumb=$sSiteURL."media/common/thumb.jpg";
 $sSign=$sSiteURL."media/common/sign.png";
 
