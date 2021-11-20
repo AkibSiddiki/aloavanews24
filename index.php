@@ -116,7 +116,7 @@
                                 </div>
                             </a>
                         </div>
-                        <div class="leadNewsB pb-4">
+                        <div class="leadNewsB">
                             <a href="#"><span class="catTag">রাজধানী</span></a><span class="postTime"> - ১ ঘণ্টা ১৫
                                 মিনিট আগে</span>
                             <a href="#">
@@ -203,7 +203,7 @@
                         <div class="ad300_250 text-center mb-4 borderBottom pb-4">
                             <img class="img-fluid" src="<?php echo $sSiteURL; ?>media/imgAll/AD 300X250.png" alt="AD">
                         </div>
-                        <div class="leadNewsB pb-4">
+                        <div class="leadNewsB">
                             <a href="#"><span class="catTag">ইউরোপ</span></a><span class="postTime"> - ২ ঘণ্টা ৩৫ মিনিট আগে</span>
                             <a href="#">
                                 <h2 class="heading">ইউরোপে আবার ঊর্ধ্বমুখী সংক্রমণ, সর্বাত্মক লকডাউনের পথে অস্ট্রিয়া</h2>
@@ -486,7 +486,7 @@
                 <h4 class="catTitle">ট্রেন্ডিং নিউজ <i class="fas fa-caret-right"></i></h4>
                 <div class="row pt-4 pb-4 gx-5">
                     <div class="col-sm-3 borderRight">
-                        <div class="topNewsDiv mb-4">
+                        <div class="topNewsDiv">
                             <a href="#">
                                 <div class="imgResize">
                                     <figure class="imgViewer">
@@ -504,7 +504,7 @@
                         </div>
                     </div>
                     <div class="col-sm-3 borderRight">
-                        <div class="topNewsDiv mb-4">
+                        <div class="topNewsDiv">
                             <a href="#">
                                 <div class="imgResize">
                                     <figure class="imgViewer">
@@ -522,7 +522,7 @@
                         </div>
                     </div>
                     <div class="col-sm-3 borderRight">
-                        <div class="topNewsDiv mb-4">
+                        <div class="topNewsDiv">
                             <a href="#">
                                 <div class="imgResize">
                                     <figure class="imgViewer">
@@ -540,7 +540,7 @@
                         </div>
                     </div>
                     <div class="col-sm-3">
-                        <div class="topNewsDiv mb-4">
+                        <div class="topNewsDiv">
                             <a href="#">
                                 <div class="imgResize">
                                     <figure class="imgViewer">
@@ -569,8 +569,8 @@
             <div class="container">
                 <div class="newsLayout1">
                     <h4 class="catTitle mb-4"><a href="#">জাতীয় <i class="fas fa-caret-right"></i></a></h4>
-                    <div class="row gx-5">
-                        <div class="col-sm-4 pb-4 mb-4 borderRight">
+                    <div class="row gx-5 mb-4">
+                        <div class="col-sm-4 borderRight">
                             <div class="newsType1">
                                 <a href="#">
                                     <div class="imgResize">
@@ -587,7 +587,7 @@
                                 </a>
                             </div>
                         </div>
-                        <div class="col-sm-4 pb-4 mb-4 borderRight">
+                        <div class="col-sm-4 borderRight">
                             <div class="newsType1">
                                 <a href="#">
                                     <div class="imgResize">
@@ -604,7 +604,7 @@
                                 </a>
                             </div>
                         </div>
-                        <div class="col-sm-4 pb-4 mb-4">
+                        <div class="col-sm-4">
                             <div class="newsType2 borderBottom mb-4">
                                 <a href="#">
                                     <div class="row gx-2">
@@ -641,7 +641,7 @@
                                     </div>
                                 </a>
                             </div>
-                            <div class="newsType2 borderBottom mb-4">
+                            <div class="newsType2 borderBottom">
                                 <a href="#">
                                     <div class="row gx-2">
                                         <div class="col-7">
@@ -664,8 +664,8 @@
                 </div>
                 <div class="newsLayout1">
                     <h4 class="catTitle mb-4"><a href="#">সারাদেশ <i class="fas fa-caret-right"></i></a></h4>
-                    <div class="row gx-5">
-                        <div class="col-sm-4 pb-4 mb-4 borderRight">
+                    <div class="row gx-5 mb-4">
+                        <div class="col-sm-4 borderRight">
                             <div class="newsType2 borderBottom mb-4">
                                 <a href="#">
                                     <div class="row gx-2">
@@ -702,7 +702,7 @@
                                     </div>
                                 </a>
                             </div>
-                            <div class="newsType2 borderBottom mb-4">
+                            <div class="newsType2 borderBottom">
                                 <a href="#">
                                     <div class="row gx-2">
                                         <div class="col-7">
@@ -721,7 +721,7 @@
                                 </a>
                             </div>
                         </div>
-                        <div class="col-sm-4 pb-4 mb-4 borderRight">
+                        <div class="col-sm-4 borderRight">
                             <div class="newsType1">
                                 <a href="#">
                                     <div class="imgResize">
@@ -738,7 +738,7 @@
                                 </a>
                             </div>
                         </div>
-                        <div class="col-sm-4 pb-4 mb-4 ">
+                        <div class="col-sm-4 ">
                             <div class="newsType1">
                                 <a href="#">
                                     <div class="imgResize">
@@ -799,7 +799,7 @@
                                         </a>
                                     </div>
                                 </div>
-                                <div class="col-12 mb-4">
+                                <div class="col-12">
                                     <div class="newsType2 borderBottom mb-4">
                                         <a href="#">
                                             <div class="row gx-4">
@@ -894,7 +894,7 @@
                                         </a>
                                     </div>
                                 </div>
-                                <div class="col-12 mb-4">
+                                <div class="col-12">
                                     <div class="newsType2 borderBottom mb-4">
                                         <a href="#">
                                             <div class="row gx-4">
@@ -957,7 +957,7 @@
                 <div class="newsLayout1 layoutPlus">
                     <h4 class="catTitle mb-4"><a href="#">খেলা <i class="fas fa-caret-right"></i></a></h4>
                     <div class="row gx-5">
-                        <div class="col-sm-4 pb-4 mb-4 borderRight">
+                        <div class="col-sm-4 borderRight">
                             <div class="newsType1 borderBottom mb-4">
                                 <a href="#">
                                     <div class="imgResize">
@@ -989,7 +989,7 @@
                                 </a>
                             </div>
                         </div>
-                        <div class="col-sm-4 pb-4 mb-4 borderRight">
+                        <div class="col-sm-4 borderRight">
                             <div class="newsType1 borderBottom mb-4">
                                 <a href="#">
                                     <div class="imgResize">
@@ -1021,7 +1021,7 @@
                                 </a>
                             </div>
                         </div>
-                        <div class="col-sm-4 pb-4 mb-4">
+                        <div class="col-sm-4">
                             <div class="newsType2 borderBottom mb-4">
                                 <a href="#">
                                     <div class="row gx-2">
@@ -1112,7 +1112,7 @@
                                     </div>
                                 </a>
                             </div>
-                            <div class="newsType2 borderBottom mb-4">
+                            <div class="newsType2 borderBottom">
                                 <a href="#">
                                     <div class="row gx-2">
                                         <div class="col-7">
@@ -1175,7 +1175,7 @@
                                         </a>
                                     </div>
                                 </div>
-                                <div class="col-12 mb-4">
+                                <div class="col-12">
                                     <div class="newsType2 borderBottom mb-4">
                                         <a href="#">
                                             <div class="row gx-4">
@@ -1270,7 +1270,7 @@
                                         </a>
                                     </div>
                                 </div>
-                                <div class="col-12 mb-4">
+                                <div class="col-12">
                                     <div class="newsType2 borderBottom mb-4">
                                         <a href="#">
                                             <div class="row gx-4">
@@ -1332,8 +1332,8 @@
                 </div>
                 <div class="newsLayout1 layoutPlus">
                     <h4 class="catTitle mb-4"><a href="#">বিনোদন <i class="fas fa-caret-right"></i></a></h4>
-                    <div class="row gx-5">
-                        <div class="col-sm-4 pb-4 mb-4 borderRight">
+                    <div class="row gx-5 mb-4">
+                        <div class="col-sm-4 borderRight">
                             <div class="newsType1 borderBottom mb-4">
                                 <a href="#">
                                     <div class="imgResize">
@@ -1365,7 +1365,7 @@
                                 </a>
                             </div>
                         </div>
-                        <div class="col-sm-4 pb-4 mb-4 borderRight">
+                        <div class="col-sm-4 borderRight">
                             <div class="newsType1 borderBottom mb-4">
                                 <a href="#">
                                     <div class="imgResize">
@@ -1397,7 +1397,7 @@
                                 </a>
                             </div>
                         </div>
-                        <div class="col-sm-4 pb-4 mb-4">
+                        <div class="col-sm-4">
                             <div class="newsType2 borderBottom mb-4">
                                 <a href="#">
                                     <div class="row gx-2">
@@ -1488,7 +1488,7 @@
                                     </div>
                                 </a>
                             </div>
-                            <div class="newsType2 borderBottom mb-4">
+                            <div class="newsType2 borderBottom">
                                 <a href="#">
                                     <div class="row gx-2">
                                         <div class="col-7">
@@ -1512,7 +1512,7 @@
                 <div class="newsLayout1 mb-4">
                     <h4 class="catTitle mb-4"><a href="#">লাইফ স্টাইল <i class="fas fa-caret-right"></i></a></h4>
                     <div class="row gx-5">
-                        <div class="col-sm-3 pb-4 mb-4 borderRight">
+                        <div class="col-sm-3 borderRight">
                             <div class="newsType1">
                                 <a href="#">
                                     <div class="imgResize">
@@ -1529,7 +1529,7 @@
                                 </a>
                             </div>
                         </div>
-                        <div class="col-sm-3 pb-4 mb-4 borderRight">
+                        <div class="col-sm-3 borderRight">
                             <div class="newsType1">
                                 <a href="#">
                                     <div class="imgResize">
@@ -1546,7 +1546,7 @@
                                 </a>
                             </div>
                         </div>
-                        <div class="col-sm-3 pb-4 mb-4 borderRight">
+                        <div class="col-sm-3 borderRight">
                             <div class="newsType1">
                                 <a href="#">
                                     <div class="imgResize">
@@ -1563,7 +1563,7 @@
                                 </a>
                             </div>
                         </div>
-                        <div class="col-sm-3 pb-4 mb-4">
+                        <div class="col-sm-3">
                             <div class="newsType1">
                                 <a href="#">
                                     <div class="imgResize">
@@ -1590,7 +1590,7 @@
                         <div class="col-sm-3 borderRight">
                             <h4 class="catTitle mb-4"><a href="#">করোনাভাইরাস <i class="fas fa-caret-right"></i></a></h4>
                             <div class="row gx-5">
-                                <div class="col-12 mb-4">
+                                <div class="col-12">
                                     <div class="newsType2 borderBottom mb-4">
                                         <a href="#">
                                             <div class="row gx-2">
@@ -1651,7 +1651,7 @@
                         <div class="col-sm-3 borderRight">
                             <h4 class="catTitle mb-4"><a href="#">তথ্য ও প্রযুক্তি <i class="fas fa-caret-right"></i></a></h4>
                             <div class="row gx-5">
-                                <div class="col-12 mb-4">
+                                <div class="col-12">
                                     <div class="newsType2 borderBottom mb-4">
                                         <a href="#">
                                             <div class="row gx-2">
@@ -1713,7 +1713,7 @@
                             <h4 class="catTitle mb-4"><a href="#">প্রবাস <i class="fas fa-caret-right"></i></a></h4>
                             <div class="row gx-5">
 
-                                <div class="col-12 mb-4">
+                                <div class="col-12">
                                     <div class="newsType2 borderBottom mb-4">
                                         <a href="#">
                                             <div class="row gx-2">
@@ -1775,7 +1775,7 @@
                             <h4 class="catTitle mb-4"><a href="#">আইন ও অপরাধ <i class="fas fa-caret-right"></i></a></h4>
                             <div class="row gx-5">
 
-                                <div class="col-12 mb-4">
+                                <div class="col-12">
                                     <div class="newsType2 borderBottom mb-4">
                                         <a href="#">
                                             <div class="row gx-2">
@@ -1835,7 +1835,6 @@
                         </div>
                     </div>
                 </div>
-
             </div>
         </section>
     </main>

@@ -397,14 +397,14 @@ main {
       }
     }
     .newsType2 {
-      height: 86px;
+      height: 90px;
       overflow: hidden;
       .heading {
         @include headingTypeB;
         @include maxLine(3);
       }
       .imgResize {
-        @include imgViewer(57%);
+        @include imgViewer(62%);
       }
     }
   }
